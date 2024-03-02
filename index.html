@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/estilo.CSS">
+    <script src="./javasc.js"></script>
+    <title>Criptografia</title>
+</head>
+<body>
+    <header class="logo1"><img  class="logo" src="./assets/Frame 6.png"></header>
+        <main class="apresentacao">
+            <div class="lado_esquerdo_da_tela">
+                
+                <div class="lado_esquerdo_da_tela_conteudo">
+                    <div class="lado_esquerdo_campo_de_texto">
+                        <textarea id="campo_de_texto_entradaid" class="campo_de_texto_entrada" placeholder="Digite seu texto"></textarea>
+                        
+                        </textarea>
+                    </div>   
+                    <div class="instrucoes">
+                        <p><img src="./assets/bi_exclamation-circle-fill.png">Apenas letras minúsculas e sem acento.</p>
+                    </div>
+                    <div class="botao">
+                            
+                        <button type="button" class="botao_estilo botao__Criptografar"  onclick="criptografar()" >
+                            Criptografar
+                        </button>                            
+                        <button type="button" class="botao_estilo botao__Descriptografar" onclick="descriptografar()">
+                            Descriptografar
+                        </button>
+                    </div>
+                </div> 
+            </div>
+           
+            <div id="ladoDireitoDaTelaid" class="lado_direito_da_tela">
+                
+                <textarea id="campo_de_texto_saidaid" class="campo_de_texto_saida" readonly>
+                </textarea>
+                <div id="sem_textoid" class="lado_direito_da_tela_sem_texto">
+                    <img class='imagem' src="./assets/High quality products 1 1.svg">
+                    <div class="lado_direito_texto">
+                            <p class='p1' >Nenhuma mensagem encontrada </p>
+                            <p class='p2' >Digite um texto que você deseja criptografar ou descriptografar.</p>
+                        
+                    </div>
+                </div>
+                <button id="botaoCopiarid" type="button" class="botao_estilo botao_copiar"  onclick="copiarTexto()" >
+                    Copiar
+                </button> 
+            </div>
+
+        </main>
+    <footer>
+        <div class="rodape">
+            <p>Desenvolvido por Luis Pinheiro</p>
+        </div>
+    </footer>
+
+
+</body>
+</html>
